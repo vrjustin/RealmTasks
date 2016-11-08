@@ -13,9 +13,9 @@ class ListsTableViewCell: UITableViewCell {
     @IBOutlet weak var listTitleLabel: UILabel!
     @IBOutlet weak var tasksCountLabel: UILabel!
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    func configureCell(aTaskList: TaskList) {
+        listTitleLabel.text = aTaskList.name
+        tasksCountLabel.text = "\(aTaskList.tasks.count) Tasks"
     }
 
 }

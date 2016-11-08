@@ -33,7 +33,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ag7-Kq-2GJ">
-                                <rect key="frame" x="0.0" y="92" width="320" height="388"/>
+                                <rect key="frame" x="0.0" y="93" width="320" height="387"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="listsCellReuseIdentifier" id="sn4-yW-nEG" customClass="ListsTableViewCell" customModule="RealmTasks" customModuleProvider="target">
@@ -77,7 +77,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ag7-Kq-2GJ" firstAttribute="top" secondItem="eVv-9O-cOH" secondAttribute="bottom" id="X54-zG-sOb"/>
+                            <constraint firstItem="ag7-Kq-2GJ" firstAttribute="top" secondItem="eVv-9O-cOH" secondAttribute="bottom" constant="1" id="X54-zG-sOb"/>
                             <constraint firstAttribute="trailing" secondItem="ag7-Kq-2GJ" secondAttribute="trailing" id="faZ-EQ-L0v"/>
                             <constraint firstItem="CNJ-KY-e3Y" firstAttribute="top" secondItem="ag7-Kq-2GJ" secondAttribute="bottom" id="gcV-MS-9ZN"/>
                             <constraint firstAttribute="trailing" secondItem="eVv-9O-cOH" secondAttribute="trailing" id="kOJ-DI-kbV"/>
