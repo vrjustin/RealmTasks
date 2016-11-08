@@ -8,9 +8,8 @@
 
 import UIKit
 
-class TaskListViewController: UIViewController {
-
-    @IBOutlet weak var navigationBar: UINavigationBar!
+class TaskListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,8 +19,31 @@ class TaskListViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    
-    @IBAction func segmentedControllerChangeAction(_ sender: UISegmentedControl) {
+    @IBAction func editBBItemAction(_ sender: UIBarButtonItem) {
+        print("editBBItemAction Touched");
     }
+    
+    @IBAction func addBBItemAction(_ sender: UIBarButtonItem) {
+        print("addBBItemAction Touched");
+    }
+    
+    @IBAction func segmentedControllerChangedAction(_ sender: UISegmentedControl) {
+        print("segmentedControllerChanged Touched")
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
+    
 }
 

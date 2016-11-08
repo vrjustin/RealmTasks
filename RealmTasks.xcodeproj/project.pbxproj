@@ -15,6 +15,8 @@
 		1A3360131DD20F8900521A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3360111DD20F8900521A22 /* LaunchScreen.storyboard */; };
 		1A33601E1DD20F8900521A22 /* RealmTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33601D1DD20F8900521A22 /* RealmTasksTests.swift */; };
 		1A3360291DD20F8900521A22 /* RealmTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3360281DD20F8900521A22 /* RealmTasksUITests.swift */; };
+		1A798B9D1DD23F6B00C20F5E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A798B9C1DD23F6B00C20F5E /* TasksViewController.swift */; };
+		1A798B9F1DD23FCC00C20F5E /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A798B9E1DD23FCC00C20F5E /* ListsTableViewCell.swift */; };
 		1AEC6C1B1DD212F100CA583F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC6C1A1DD212F100CA583F /* Task.swift */; };
 		1AEC6C1D1DD214D300CA583F /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC6C1C1DD214D300CA583F /* TaskList.swift */; };
 		5A0A2E3C5E2FA9DE9B836685 /* Pods_RealmTasksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F170269923B0D9FED4E9C261 /* Pods_RealmTasksUITests.framework */; };
@@ -54,6 +56,8 @@
 		1A3360241DD20F8900521A22 /* RealmTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3360281DD20F8900521A22 /* RealmTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTasksUITests.swift; sourceTree = "<group>"; };
 		1A33602A1DD20F8900521A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A798B9C1DD23F6B00C20F5E /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		1A798B9E1DD23FCC00C20F5E /* ListsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
 		1AEC6C1A1DD212F100CA583F /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		1AEC6C1C1DD214D300CA583F /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		4D4161A52AF1B2E52346AD9E /* Pods-RealmTasksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasksUITests/Pods-RealmTasksUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				1A33600A1DD20F8900521A22 /* TaskListViewController.swift */,
+				1A798B9C1DD23F6B00C20F5E /* TasksViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			children = (
 				1A33600C1DD20F8900521A22 /* Main.storyboard */,
 				1A3360111DD20F8900521A22 /* LaunchScreen.storyboard */,
+				1A798B9E1DD23FCC00C20F5E /* ListsTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -489,8 +495,10 @@
 			files = (
 				1AEC6C1D1DD214D300CA583F /* TaskList.swift in Sources */,
 				1A33600B1DD20F8900521A22 /* TaskListViewController.swift in Sources */,
+				1A798B9D1DD23F6B00C20F5E /* TasksViewController.swift in Sources */,
 				1AEC6C1B1DD212F100CA583F /* Task.swift in Sources */,
 				1A3360091DD20F8900521A22 /* AppDelegate.swift in Sources */,
+				1A798B9F1DD23FCC00C20F5E /* ListsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

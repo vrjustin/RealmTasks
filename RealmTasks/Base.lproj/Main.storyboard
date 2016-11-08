@@ -1,91 +1,148 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SE4-Wr-ocH">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Task List View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Task Lists-->
+        <scene sceneID="33l-GT-cig">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="RealmTasks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dPA-vR-oqp" customClass="TaskListViewController" customModule="RealmTasks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="fQH-52-zBk"/>
+                        <viewControllerLayoutGuide type="bottom" id="CNJ-KY-e3Y"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="raK-Lb-Hj7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB1-9l-n6B">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="nH1-Wr-OrK"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.62745098040000002" green="0.71372549019999998" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="Task Lists" id="tQC-mO-RLJ">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="bzd-AN-8SD"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ftm-tf-pfT"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="a9H-D5-Jes">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="eVv-9O-cOH">
                                 <rect key="frame" x="0.0" y="64" width="320" height="29"/>
                                 <segments>
                                     <segment title="A-Z"/>
                                     <segment title="Date"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmentedControllerChangeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="M02-PJ-6LC"/>
+                                    <action selector="segmentedControllerChangedAction:" destination="dPA-vR-oqp" eventType="valueChanged" id="43g-oD-22U"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-3w-5KE">
-                                <rect key="frame" x="0.0" y="94" width="320" height="386"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ag7-Kq-2GJ">
+                                <rect key="frame" x="0.0" y="92" width="320" height="388"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskListCellIdentifier" id="WMK-JC-tlS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="sn4-yW-nEG" customClass="ListsTableViewCell" customModule="RealmTasks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WMK-JC-tlS" id="jK1-og-ehB">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sn4-yW-nEG" id="hA0-sJ-TE8">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of a List Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn3-LD-Kju">
+                                                    <rect key="frame" x="8" y="11" width="195.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 Tasks" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR2-UB-12R">
+                                                    <rect key="frame" x="218.5" y="12.5" width="52.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NR2-UB-12R" firstAttribute="centerY" secondItem="hA0-sJ-TE8" secondAttribute="centerY" id="GNd-KC-7hb"/>
+                                                <constraint firstItem="mn3-LD-Kju" firstAttribute="leading" secondItem="hA0-sJ-TE8" secondAttribute="leadingMargin" id="iDE-79-0bb"/>
+                                                <constraint firstItem="mn3-LD-Kju" firstAttribute="centerY" secondItem="hA0-sJ-TE8" secondAttribute="centerY" id="qyB-KW-kK9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NR2-UB-12R" secondAttribute="trailing" constant="8" id="rJX-jH-xhb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="listTitleLabel" destination="mn3-LD-Kju" id="r7w-Pi-xWe"/>
+                                            <outlet property="tasksCountLabel" destination="NR2-UB-12R" id="xjr-Pd-Pi8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="A6N-4F-lGT"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ocZ-3t-A6O"/>
+                                    <outlet property="dataSource" destination="dPA-vR-oqp" id="nVQ-ce-Q0D"/>
+                                    <outlet property="delegate" destination="dPA-vR-oqp" id="GXs-su-8xs"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.62745098040000002" green="0.71372549019999998" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="KB1-9l-n6B" secondAttribute="trailing" id="0Qw-7e-Nf5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NYO-3w-5KE" secondAttribute="bottom" id="Bkd-Bo-5Nd"/>
-                            <constraint firstItem="KB1-9l-n6B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Gvt-xw-1YB"/>
-                            <constraint firstItem="NYO-3w-5KE" firstAttribute="top" secondItem="a9H-D5-Jes" secondAttribute="bottom" constant="2" id="JLx-IM-jNA"/>
-                            <constraint firstItem="NYO-3w-5KE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rz5-MO-Pvd"/>
-                            <constraint firstAttribute="trailing" secondItem="NYO-3w-5KE" secondAttribute="trailing" id="WpO-0s-D32"/>
-                            <constraint firstItem="a9H-D5-Jes" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZG3-Oi-mrb"/>
-                            <constraint firstAttribute="trailing" secondItem="a9H-D5-Jes" secondAttribute="trailing" id="ovM-xf-aR5"/>
-                            <constraint firstItem="a9H-D5-Jes" firstAttribute="top" secondItem="KB1-9l-n6B" secondAttribute="bottom" id="phL-Zd-dqJ"/>
-                            <constraint firstItem="KB1-9l-n6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xc3-AJ-gam"/>
+                            <constraint firstItem="ag7-Kq-2GJ" firstAttribute="top" secondItem="eVv-9O-cOH" secondAttribute="bottom" id="X54-zG-sOb"/>
+                            <constraint firstAttribute="trailing" secondItem="ag7-Kq-2GJ" secondAttribute="trailing" id="faZ-EQ-L0v"/>
+                            <constraint firstItem="CNJ-KY-e3Y" firstAttribute="top" secondItem="ag7-Kq-2GJ" secondAttribute="bottom" id="gcV-MS-9ZN"/>
+                            <constraint firstAttribute="trailing" secondItem="eVv-9O-cOH" secondAttribute="trailing" id="kOJ-DI-kbV"/>
+                            <constraint firstItem="ag7-Kq-2GJ" firstAttribute="leading" secondItem="raK-Lb-Hj7" secondAttribute="leading" id="pCk-rG-JQ8"/>
+                            <constraint firstItem="eVv-9O-cOH" firstAttribute="leading" secondItem="raK-Lb-Hj7" secondAttribute="leading" id="qPE-1n-lpT"/>
+                            <constraint firstItem="eVv-9O-cOH" firstAttribute="top" secondItem="fQH-52-zBk" secondAttribute="bottom" id="tR3-1i-Us2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Task Lists" id="nvd-SS-LIT">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="Ru0-D1-4P1">
+                            <connections>
+                                <action selector="editBBItemAction:" destination="dPA-vR-oqp" id="g99-7N-w2p"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pt7-NU-juh">
+                            <connections>
+                                <action selector="addBBItemAction:" destination="dPA-vR-oqp" id="JBn-Lb-pSH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="navigationBar" destination="KB1-9l-n6B" id="q2M-0F-P69"/>
-                        <outlet property="segmentedController" destination="a9H-D5-Jes" id="eWS-ng-KyD"/>
-                        <outlet property="tableView" destination="NYO-3w-5KE" id="UbK-wm-ofZ"/>
+                        <outlet property="segmentedController" destination="eVv-9O-cOH" id="O6R-gb-ANP"/>
+                        <outlet property="tableView" destination="ag7-Kq-2GJ" id="3Ad-8A-BRT"/>
+                        <segue destination="gyW-YB-GjA" kind="show" identifier="tasksVC" id="PgI-70-tm0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMc-9V-YYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.375" y="36.25"/>
+            <point key="canvasLocation" x="1650" y="-275"/>
+        </scene>
+        <!--Tasks View Controller-->
+        <scene sceneID="gzT-JV-Hmi">
+            <objects>
+                <viewController id="gyW-YB-GjA" customClass="TasksViewController" customModule="RealmTasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="15d-aw-BwS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ws5-3Y-tnD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ivr-wM-Lmp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHB-je-oc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430" y="-275"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X4S-A9-Tom">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SE4-Wr-ocH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vuO-di-ZuJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dPA-vR-oqp" kind="relationship" relationship="rootViewController" id="r1c-2M-PSk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQN-Vd-2Ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575.625" y="-275"/>
         </scene>
     </scenes>
 </document>
