@@ -40,7 +40,17 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "listsCellReuseIdentifier", for: indexPath) as? ListsTableViewCell {
+            
+            //Configure the cells data now.
+            
+            return cell
+            
+        } else {
+            return UITableViewCell()
+        }
+        
     }
     
     
