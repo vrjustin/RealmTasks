@@ -101,7 +101,7 @@
                     <connections>
                         <outlet property="segmentedController" destination="eVv-9O-cOH" id="O6R-gb-ANP"/>
                         <outlet property="tableView" destination="ag7-Kq-2GJ" id="3Ad-8A-BRT"/>
-                        <segue destination="gyW-YB-GjA" kind="show" identifier="tasksVC" id="PgI-70-tm0"/>
+                        <segue destination="gyW-YB-GjA" kind="show" identifier="tasksVC" id="agP-Ek-2jV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMc-9V-YYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,10 +121,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hFW-aV-GPM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHB-je-oc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2430" y="-275"/>
+            <point key="canvasLocation" x="2531" y="-275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X4S-A9-Tom">
