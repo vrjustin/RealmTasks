@@ -115,11 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				1A3360081DD20F8900521A22 /* AppDelegate.swift */,
-				1A33600A1DD20F8900521A22 /* ViewController.swift */,
-				1A33600C1DD20F8900521A22 /* Main.storyboard */,
-				1A33600F1DD20F8900521A22 /* Assets.xcassets */,
-				1A3360111DD20F8900521A22 /* LaunchScreen.storyboard */,
-				1A3360141DD20F8900521A22 /* Info.plist */,
+				1AEC6C181DD210FC00CA583F /* Model */,
+				1AEC6C171DD210F700CA583F /* View */,
+				1AEC6C161DD210F100CA583F /* Controller */,
+				1AEC6C191DD2110000CA583F /* Resources */,
 			);
 			path = RealmTasks;
 			sourceTree = "<group>";
@@ -140,6 +139,39 @@
 				1A33602A1DD20F8900521A22 /* Info.plist */,
 			);
 			path = RealmTasksUITests;
+			sourceTree = "<group>";
+		};
+		1AEC6C161DD210F100CA583F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A33600A1DD20F8900521A22 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1AEC6C171DD210F700CA583F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A33600C1DD20F8900521A22 /* Main.storyboard */,
+				1A3360111DD20F8900521A22 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1AEC6C181DD210FC00CA583F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1AEC6C191DD2110000CA583F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A33600F1DD20F8900521A22 /* Assets.xcassets */,
+				1A3360141DD20F8900521A22 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2757BA8D6A27B70D9EF926EB /* Pods */ = {
@@ -394,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A4FBFD247EF01FC13C672476 /* [CP] Copy Pods Resources */ = {
@@ -424,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E11DCFD34A4BF480AD015946 /* [CP] Check Pods Manifest.lock */ = {
@@ -439,7 +471,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -707,6 +739,7 @@
 				1A33602F1DD20F8900521A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A3360301DD20F8900521A22 /* Build configuration list for PBXNativeTarget "RealmTasksTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +748,7 @@
 				1A3360321DD20F8900521A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A3360331DD20F8900521A22 /* Build configuration list for PBXNativeTarget "RealmTasksUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +757,7 @@
 				1A3360351DD20F8900521A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
