@@ -120,23 +120,58 @@
                         <viewControllerLayoutGuide type="bottom" id="Ws5-3Y-tnD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ivr-wM-Lmp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLT-Vd-Qry">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="Jer-mV-RTX">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jer-mV-RTX" id="1Xc-vI-xS3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gyW-YB-GjA" id="t3A-U3-uO2"/>
+                                    <outlet property="delegate" destination="gyW-YB-GjA" id="tTk-0d-Sln"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mLT-Vd-Qry" firstAttribute="leading" secondItem="Ivr-wM-Lmp" secondAttribute="leading" id="cwt-Ch-x9m"/>
+                            <constraint firstAttribute="trailing" secondItem="mLT-Vd-Qry" secondAttribute="trailing" id="jSy-sk-fO3"/>
+                            <constraint firstItem="mLT-Vd-Qry" firstAttribute="top" secondItem="15d-aw-BwS" secondAttribute="bottom" id="oBe-HF-klI"/>
+                            <constraint firstItem="Ws5-3Y-tnD" firstAttribute="top" secondItem="mLT-Vd-Qry" secondAttribute="bottom" id="x9F-18-7Nb"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Shopping List" id="hFW-aV-GPM">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="fpM-Jf-fC6">
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="addUserAction:" destination="gyW-YB-GjA" id="KRS-In-8eU"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="edit" id="I4u-UU-fjk">
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="editUserAction:" destination="gyW-YB-GjA" id="wiY-yh-b03"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="mLT-Vd-Qry" id="TBD-O5-dBh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHB-je-oc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

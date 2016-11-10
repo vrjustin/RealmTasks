@@ -22,13 +22,11 @@ class TaskListsViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         readTasksAndUpdateUI()
-
-        //Create some sample data to be displayed ONLY if we have not already got some in Realm.
-//        if taskListsResults.count == 0 {
-//            setupSampleData()
-//        }
     }
     
     func setupSampleData() {
