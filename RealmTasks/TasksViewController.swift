@@ -14,6 +14,7 @@ class TasksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = tasksList.name
     }
 
 
