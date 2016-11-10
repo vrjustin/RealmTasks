@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		057AB46F8C9E1B34F9C09BE9 /* Pods_RealmTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910AFBC413908DCCC76EA21 /* Pods_RealmTasks.framework */; };
 		1A3360091DD20F8900521A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3360081DD20F8900521A22 /* AppDelegate.swift */; };
-		1A33600B1DD20F8900521A22 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33600A1DD20F8900521A22 /* TaskListViewController.swift */; };
+		1A33600B1DD20F8900521A22 /* TaskListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A33600A1DD20F8900521A22 /* TaskListsViewController.swift */; };
 		1A33600E1DD20F8900521A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A33600C1DD20F8900521A22 /* Main.storyboard */; };
 		1A3360101DD20F8900521A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A33600F1DD20F8900521A22 /* Assets.xcassets */; };
 		1A3360131DD20F8900521A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3360111DD20F8900521A22 /* LaunchScreen.storyboard */; };
@@ -45,7 +45,7 @@
 		146E1445E7C9BF200CA85039 /* Pods-RealmTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTasks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTasks/Pods-RealmTasks.debug.xcconfig"; sourceTree = "<group>"; };
 		1A3360051DD20F8900521A22 /* RealmTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3360081DD20F8900521A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A33600A1DD20F8900521A22 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		1A33600A1DD20F8900521A22 /* TaskListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListsViewController.swift; sourceTree = "<group>"; };
 		1A33600D1DD20F8900521A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A33600F1DD20F8900521A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3360121DD20F8900521A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		1AEC6C161DD210F100CA583F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1A33600A1DD20F8900521A22 /* TaskListViewController.swift */,
+				1A33600A1DD20F8900521A22 /* TaskListsViewController.swift */,
 				1A798B9C1DD23F6B00C20F5E /* TasksViewController.swift */,
 			);
 			name = Controller;
@@ -494,7 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEC6C1D1DD214D300CA583F /* TaskList.swift in Sources */,
-				1A33600B1DD20F8900521A22 /* TaskListViewController.swift in Sources */,
+				1A33600B1DD20F8900521A22 /* TaskListsViewController.swift in Sources */,
 				1A798B9D1DD23F6B00C20F5E /* TasksViewController.swift in Sources */,
 				1AEC6C1B1DD212F100CA583F /* Task.swift in Sources */,
 				1A3360091DD20F8900521A22 /* AppDelegate.swift in Sources */,

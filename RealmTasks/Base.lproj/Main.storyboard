@@ -7,13 +7,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Task Lists-->
         <scene sceneID="33l-GT-cig">
             <objects>
-                <viewController id="dPA-vR-oqp" customClass="TaskListViewController" customModule="RealmTasks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dPA-vR-oqp" customClass="TaskListsViewController" customModule="RealmTasks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fQH-52-zBk"/>
                         <viewControllerLayoutGuide type="bottom" id="CNJ-KY-e3Y"/>
@@ -40,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sn4-yW-nEG" id="hA0-sJ-TE8">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of a List Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn3-LD-Kju">
@@ -88,11 +89,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Task Lists" id="nvd-SS-LIT">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="Ru0-D1-4P1">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="editBBItemAction:" destination="dPA-vR-oqp" id="g99-7N-w2p"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pt7-NU-juh">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="addBBItemAction:" destination="dPA-vR-oqp" id="JBn-Lb-pSH"/>
                             </connections>
@@ -108,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="1650" y="-275"/>
         </scene>
-        <!--Tasks View Controller-->
+        <!--Shopping List-->
         <scene sceneID="gzT-JV-Hmi">
             <objects>
                 <viewController id="gyW-YB-GjA" customClass="TasksViewController" customModule="RealmTasks" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,13 +125,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hFW-aV-GPM"/>
+                    <navigationItem key="navigationItem" title="Shopping List" id="hFW-aV-GPM">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="fpM-Jf-fC6">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="I4u-UU-fjk">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHB-je-oc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531" y="-275"/>
+            <point key="canvasLocation" x="2529.375" y="-275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X4S-A9-Tom">

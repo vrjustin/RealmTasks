@@ -5,19 +5,20 @@
 //  Created by Maronde, Justin on 11/8/16.
 //  Copyright © 2016 Justin Maronde. All rights reserved.
 //
+// https://www.appcoda.com/realm-database-swift/
 
 import UIKit
 import RealmSwift
+
+let ad = UIApplication.shared.delegate as! AppDelegate
+let uiRealm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    let uiRealm = try! Realm()
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // https://www.appcoda.com/realm-database-swift/
         return true
     }
 
@@ -44,6 +45,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
-let ad = UIApplication.shared.delegate as! AppDelegate
-let uiRealm = try! Realm()
